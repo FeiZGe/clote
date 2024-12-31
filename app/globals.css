@@ -47,8 +47,8 @@
         @apply font-normal text-sm text-white-100/80;
     }
 
-    .pink_container {
-        @apply w-full bg-primary min-h-[530px] pattern flex justify-center items-center flex-col py-10 px-6;
+    .blue_container {
+        @apply w-full bg-primary min-h-[530px] flex justify-center items-center flex-col py-10 px-6;
     }
 
     .tag {
@@ -56,7 +56,7 @@
     }
 
     .heading {
-        @apply uppercase bg-black px-6 py-3 font-prompt font-extrabold text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
+        @apply uppercase bg-black px-6 py-3 font-prompt font-extrabold text-white sm:text-[54px] sm:leading-[72px] text-[36px] leading-[52px] max-w-5xl text-center my-5;
     }
 
     .sub-heading {
@@ -120,7 +120,7 @@
 
     /* searchform */
     .search-form {
-        @apply max-w-3xl w-full min-h-[80px] bg-white border-[5px] border-black rounded-[80px] text-[24px] mt-8 px-5 flex flex-row items-center gap-5;
+        @apply max-w-3xl w-full min-h-[70px] bg-white border-[5px] border-black rounded-[70px] text-[20px] mt-8 px-5 flex flex-row items-center gap-5;
     }
 
     .search-input {
@@ -196,19 +196,6 @@
 
     .category-tag {
         @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-full;
-    }
-
-    .pattern {
-        background-image: linear-gradient(
-                to right,
-                transparent 49.5%,
-                rgba(251, 232, 67, 0.2) 49.5%,
-                rgba(251, 232, 67, 0.6) 50.5%,
-                transparent 50.5%
-        );
-        background-size: 5% 100%;
-        background-position: center;
-        background-repeat: repeat-x;
     }
 
     .tag-tri {
