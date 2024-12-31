@@ -10,7 +10,7 @@ const SearchForm = ({ query }: {query?: string}) => {
         name="query"
         defaultValue={query}
         className="search-input"
-        placeholder="ค้นหาชื่อวิชา เช่น วิศวกรรมซอฟต์แวร์" 
+        placeholder="ค้นหาชื่อโน๊ต เช่น วิศวกรรมซอฟต์แวร์" 
       />
 
       <div className="flex gap-2">
