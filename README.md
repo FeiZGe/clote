@@ -2,7 +2,7 @@
 
 # Clote (Class+Note)📚
 
-Study Tracker is a web application designed to help students manage and track their learning progress. This app was developed to enable users to:  
+Clote is a web application designed to help students manage and track their learning progress. This app was developed to enable users to:  
 
 - **Take notes**: Record what you've learned daily or key points from your lessons.  
 - **Summarize content**: Create concise summaries for better review before exams.  
