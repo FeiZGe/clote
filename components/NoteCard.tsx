@@ -56,7 +56,7 @@ const NoteCard = ({ post }: { post: NoteTypeCard }) => {
                 {description}
             </p>
 
-            <Image src={image} alt="placeholder" className="note-card_img" width={500} height={400} />
+            <Image src={image || "https://img.freepik.com/free-vector/website-designer-concept-illustration_114360-4438.jpg?t=st=1735720691~exp=1735724291~hmac=f965a7e9d08053129dc1ebc02a8373057dbac107b1f5989be1000d856de8fc3b&w=1060"} alt="placeholder" className="note-card_img" width={500} height={400} />
         </Link>
 
         <div className="flex-between mt-5 gap-3">
