@@ -1,5 +1,7 @@
-import NoteCard from "@/components/NoteCard";
+import NoteCard, { NoteTypeCard } from "@/components/NoteCard";
 import SearchForm from "@/components/SearchForm";
+import { client } from "@/sanity/lib/client";
+import { NOTES_QUERY } from "@/sanity/lib/queries";
 
 export default async function Home({ searchParams }: {
   searchParams: Promise<{ query: string }>;
@@ -7,16 +9,7 @@ export default async function Home({ searchParams }: {
 
   const query = (await searchParams).query;
 
-  const posts = [{ 
-    _createAt: new Date(),
-    views: 100,
-    author: { _id: 1, name: "XiaoFei" },
-    _id: 1,
-    description: "this is a description",
-    image: "https://images.unsplash.com/photo-1463436755683-3f805a9d1192?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "สอบ",
-    title: "ข้อสอบปลายภาค",
-   }]
+  const posts = await client.fetch(NOTES_QUERY);
 
   return (
     <>
@@ -36,7 +29,7 @@ export default async function Home({ searchParams }: {
 
         <ul className="mt-7 card_grid">
           {posts?.length > 0 ? (
-            posts.map((post: NoteTypeCard, index: number) => (
+            posts.map((post: NoteTypeCard) => (
               <NoteCard key={post?._id} post={post} />
             ))
           ) : (
