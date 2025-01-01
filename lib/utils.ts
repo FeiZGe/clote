@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 // แสดงวันที่ในรูปแบบ วัน เดือน ปี
 export function formatDate(date: string) {
-  return new Date(date).toLocaleDateString("en-US", {
+  return new Date(date).toLocaleDateString("th-TH", {
     day: "numeric",
     month: "long",
     year: "numeric",
