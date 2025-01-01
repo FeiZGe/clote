@@ -28,3 +28,9 @@ export const NOTE_BY_ID_QUERY = defineQuery(`*[_type == "note" && _id == $id][0]
   image,
   pitch,
 }`)
+
+export const NOTE_VIEWS_QUERY = defineQuery(`
+    *[_type == "note" && _id == $id][0]{
+        _id, views
+    }
+`);
