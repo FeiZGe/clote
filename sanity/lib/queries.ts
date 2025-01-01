@@ -13,3 +13,18 @@ export const NOTES_QUERY = defineQuery(`*[_type == "note" && defined(slug.curren
   category, 
   image
 }`);
+
+export const NOTE_BY_ID_QUERY = defineQuery(`*[_type == "note" && _id == $id][0] {
+  _id, 
+  title,
+  slug, 
+  _createAt, 
+  author -> {
+    _id, name, username, image, bio
+  }, 
+  views,
+  description, 
+  category, 
+  image,
+  pitch,
+}`)
