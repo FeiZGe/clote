@@ -15,9 +15,9 @@ export default async function Home({ searchParams }: {
   return (
     <>
       <section className="blue_container">
-        <h1 className="heading">เก็บทุกงาน<br />ในชั้นเรียนไว้ที่เดียว</h1>
+        <h1 className="heading">Keep All Your Classwork <br/> in One Place</h1>
         <p className="sub-heading !max-w-3xl">
-          จัดการโน้ต สรุปเนื้อหา และติดตามความก้าวหน้าของวิชาเรียนได้อย่างง่ายดาย
+          Easily manage notes, summarize content, and track your course progress.
         </p>
 
         <SearchForm query={query} />
@@ -25,7 +25,7 @@ export default async function Home({ searchParams }: {
 
       <section className="section_container">
         <p className="text-30-semibold">
-          {query ? `ผลการค้นหา "${query}"` : "โน๊ตทั้งหมด"}
+          {query ? `Result: "${query}"` : "All Notes"}
         </p>
 
         <ul className="mt-7 card_grid">
@@ -34,7 +34,7 @@ export default async function Home({ searchParams }: {
               <NoteCard key={post?._id} post={post} />
             ))
           ) : (
-            <p className="no-results">ไม่พบโน๊ต</p>
+            <p className="no-results">Not found</p>
           )}
         </ul>
       </section>

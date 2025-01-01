@@ -56,7 +56,7 @@ const prompt = localFont({
 
 export const metadata: Metadata = {
   title: "Clote",
-  description: "Note course work.",
+  description: "Keep All Your Classwork in One Place.",
 };
 
 export default function RootLayout({

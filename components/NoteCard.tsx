@@ -65,7 +65,7 @@ const NoteCard = ({ post }: { post: NoteTypeCard }) => {
             </Link>
             <Button className="note-card_btn" asChild>
                 <Link href={`/note/${_id}`}>
-                    รายละเอียด
+                    Details
                 </Link>
             </Button>
         </div>
